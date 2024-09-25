@@ -1,0 +1,26 @@
+.container {
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 6px;
+  width: 30%;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+
+  .clearAllButtonCompleted {
+    background-color: rebeccapurple;
+    color: white;
+    border-style: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .clearAllButton {
+    background-color: red;
+    color: white;
+    border-style: none;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+  }
+}

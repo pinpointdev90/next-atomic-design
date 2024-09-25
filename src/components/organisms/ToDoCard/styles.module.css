@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+    max-width: 100%;
+    align-items: center;
+    
+    .content {
+        width: 100%;
+
+        &[aria-completed="true"] {
+            animation: completeToDo 0.5s forwards;
+        }
+    }
+
+    .options {
+        overflow: hidden;
+        justify-content: flex-end;
+        align-items: center;
+        min-height: 100%;
+        border-radius: 4px;
+        animation: initialization 0.5s none;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+
+@keyframes initialization {
+    0% { left: -50px; opacity: 0; }
+    80% { left: 10px; opacity: 0; }
+    100% { left: 0px; opacity: 1; }
+}
+
+@keyframes completeToDo {
+    0% {  opacity: 1; }
+    25% {  opacity: 0.5; }
+    50% {  opacity: 1; }
+    75% {  opacity: 0.5; }
+    100% { opacity: 0.5; }
+}

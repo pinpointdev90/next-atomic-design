@@ -1,0 +1,18 @@
+.container {
+  max-width: 100%;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(228, 228, 228);
+  padding: 5px;
+  height: 100%;
+  border-radius: 2px;
+  animation: initialization 0.5s none;
+  width: 100%;
+}
+
+@keyframes initialization {
+  0% { left: -50px; opacity: 0; }
+  80% { left: 10px; opacity: 1; }
+  100% { left: 0px; opacity: 1; }
+}
